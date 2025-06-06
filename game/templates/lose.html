@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Проигрыш</title>
+  <style>
+    body {
+      background-color: pink;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 20px;
+    }
+    h1 {
+      color: red;
+      font-size: 28px;
+    }
+    video {
+      margin-top: 20px;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+  <h1>ВЫ ПРОИГРАЛИ, ПОПРОБУЙТЕ ЕЩЁ РАЗ</h1>
+  <video autoplay muted>
+    <source src="{{ url_for('static', filename='explosion.mp4') }}" type="video/mp4">
+  </video>
+  <br><br>
+  <a href="/">Попробовать снова</a>
+</body>
+</html>
