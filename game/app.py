@@ -18,6 +18,8 @@ def answer():
     else:
         return render_template("win.html")
 
-if __name__ == "__main__":
-    print("Сайт запускается...")
-    app.run(debug=True)
+import os
+
+if name == "main":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
